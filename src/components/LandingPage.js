@@ -1,9 +1,10 @@
 import React from 'react';
 import Header from './headerComponent/Header';
-import Home from './Home';
+
 import About from './about/About';
 import Project from './project-component/Project';
 import Footer from './footer/Footer';
+import Hero from './home-component/Hero';
 
 
 const LandingPage = () => {
@@ -11,7 +12,7 @@ const LandingPage = () => {
     <>
         <div className='mx-auto'>
             <Header/>
-            <Home/>
+            <Hero/> 
             <About/>
             <Project/>
             <Footer/>

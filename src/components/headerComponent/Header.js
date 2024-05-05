@@ -14,7 +14,7 @@ const Header = () => {
   const navItems = ["HOME", "MEET JANE", "MY WORKS", "RESUME", "CONTACT ME"];
   return (
     <>
-      <header className="z-40 relative  bg-black">
+      <header className="z-40 relative bg-black lg:opacity-100 opacity-90">
         <div className="hidden container lg:flex justify-between px-10 py-4 mx-auto text-white">
           <div className="flex items-center space-x-1 ">
             {" "}
