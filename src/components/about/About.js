@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import HireMe from './HireMe';
 
 const About = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -18,7 +19,7 @@ const About = () => {
             <div className='space-y-2'>
                 <h1 className="text-black text-2xl  font-extrabold hidden lg:flex">About Me. </h1>
                 <h1 className="text-yellow-600 text-5xl  font-extrabold hidden lg:flex" >FULL STACK DEVELOPER</h1>
-                <p className=' text-lg  '> Hello world! I am an adept Full-Stack Female Software Developer from Nigeria with a Bachelors degree in Science. My toolkit are listed below: </p>
+                <p className=' text-lg  '> Hello world! I am an adept Full-Stack Female Software Developer from Nigeria with a Bachelors degree in Science. My toolkit is listed below: </p>
             </div>
             {/* Accordion component begins here */}
             {accordionData.map((item, index) => (
@@ -36,6 +37,7 @@ const About = () => {
                 </div>
             ))}
         </div>  
+        <HireMe/>
 
     </>
   )
