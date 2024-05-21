@@ -15,7 +15,7 @@ const About = () => {
             ];
   return (
     <>
-        <div className="px-10 p-10 lg:p-20  ">
+        <div className="px-10 p-10 lg:p-20  " >
             <div className='space-y-2'>
                 <h1 className="text-black text-2xl  font-extrabold hidden lg:flex">About Me. </h1>
                 <h1 className="text-yellow-600 text-5xl  font-extrabold hidden lg:flex" >FULL STACK DEVELOPER</h1>
@@ -36,8 +36,9 @@ const About = () => {
                     )}
                 </div>
             ))}
+                    <HireMe/>
         </div>  
-        <HireMe/>
+
 
     </>
   )

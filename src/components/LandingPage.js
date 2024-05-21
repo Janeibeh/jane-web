@@ -3,8 +3,8 @@ import Header from './headerComponent/Header';
 
 import About from './about/About';
 import Project from './project-component/Project';
-import Footer from './footer/Footer';
 import Hero from './home-component/Hero';
+import Contact from './footer/Contact';
 
 
 const LandingPage = () => {
@@ -14,8 +14,8 @@ const LandingPage = () => {
             <Header/>
             <Hero/> 
             <About/>
-            <Project/>
-            <Footer/>
+            <Project />
+            <Contact />
         </div>
 
     </>
