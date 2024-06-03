@@ -11,7 +11,6 @@ const LandingPage = () => {
   return (
     <>
         <div className='mx-auto'>
-            <Header/>
             <Hero/> 
             <About/>
             <Project />

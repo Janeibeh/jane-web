@@ -3,6 +3,7 @@ import { BsGithub, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { IoMdMail } from "react-icons/io";
 import { Link } from "react-router-dom";
+import {navBarList} from "../../constants/navBarList"
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -11,7 +12,6 @@ const Header = () => {
     setMenu(!menu);
   };
 
-  const navItems = ["HOME", "MEET JANE", "MY WORKS", "RESUME", "CONTACT ME"];
   return (
     <>
       <header className="z-40 relative bg-black lg:opacity-100 opacity-90">
@@ -58,7 +58,7 @@ const Header = () => {
               menu ? "left-0 duration-500" : "-left-full duration-500"
             } `}
           >
-            {navItems.map((item) => (
+            {navBarList.map((item) => (
               <div
                 className="flex flex-col gap-0 items-center"
                 onClick={() => setSelected(item)}
@@ -69,9 +69,8 @@ const Header = () => {
                       ? "bg-sky-300 lg:bg-transparent"
                       : "bg-transparent"
                   }`}
-                  key={item}
-                >
-                  {item}
+                  key={item._id}>
+                  <Link to={item.link}>{item.title}</Link>
                 </li>
 
                 <div
@@ -95,3 +94,5 @@ const Header = () => {
 };
 
 export default Header;
+
+
